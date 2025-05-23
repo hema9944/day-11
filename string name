@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+
+char Str[20];
+
+scanf ("%s",  Str); 
+
+printf ("%s", Str[0]);
+
+return 0;}
+
+
+
+
+#include <stdio.h>
+
+int main(){
+
+char Str[20];
+
+scanf ("%s",  Str); ------(scanf("%[^\n]",str);
+
+printf ("%s", Str[0]);--------(printf("%c",str[0]);
+
+return 0;}
