@@ -5,12 +5,12 @@ char str[1000];
 int vowels = 0, consonants = 0;
 printf("eneter a string: ");
 fgets(str, sizeof(str), stdin);
-for(int i = 0; str[i] != '\n'; ++i)
+for(int i = 0; str[i] != '\0'; ++i)
 {
-char4 ch = tolower(str[i]);
+char ch = tolower(str[i]);
 if(isalpha(ch))
 {
-if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || cj == 'u')
+if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
 {
 vowels++;
 }
@@ -21,5 +21,5 @@ consonants++;
 }
 printf("vowels: %d\n", vowels);
 printf("consonants: %d\n",consonants);
-return o;
+return 0;
 }
